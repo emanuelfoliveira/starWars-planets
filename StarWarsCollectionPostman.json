@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "d55ad68c-8117-4702-8c59-5ed574347606",
+		"name": "StarWarsCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getPlanetsFromAPI",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/starWars/planetsAPI",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"starWars",
+						"planetsAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlanetsFromDB",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/starWars/planetsDB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"starWars",
+						"planetsDB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPlanet",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Alderaan\",\n\t\"climate\" : \"Climate Example\",\n\t\"terrain\" : \"Terrain 312\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/starWars/addPlanet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"starWars",
+						"addPlanet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StarWarsAPI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://swapi.co/api/planets",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlanetByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/starWars/planetByName/Yavin IV",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"starWars",
+						"planetByName",
+						"Yavin IV"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlanetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/starWars/planetById/12595470-3afa-11e9-9139-ff5401b7c4b6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"starWars",
+						"planetById",
+						"12595470-3afa-11e9-9139-ff5401b7c4b6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteByName",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/starWars/planets/Alderaan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"starWars",
+						"planets",
+						"Alderaan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
